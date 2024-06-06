@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Aplicación de Música</title>
+    <link rel="stylesheet" href="../chat bot/pagina-music/indexmusic.html">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/13d7acafeb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Encabezado -->
+        <header id="app-header">
+            <img src="imgs/logo.jpg" alt="Logo de la aplicación" width="100" class="logo">
+            <div class="search-container">
+                <input type="text" placeholder="Buscar canciones..." class="search-bar" id="searchBar">
+                <div class="suggestions" id="suggestions"></div>
+            </div>
+            </div>
+        </header>
+
+        <!-- Barra lateral de navegación -->
+        <button id="menu-toggle">☰</button>
+
+
+<aside id="app-sidebar" class="hidden">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="musica.html">musica</a></li>
+        <li><a href="#">Tu Biblioteca</a></li>
+    </ul>
+</aside>
+
+        <!-- Contenido principal -->
+        <main listid="app-content">
+            <!-- Listas de reproducción, álbumes, canciones, artistas, etc. -->
+        </main>
+
+
+        <!-- Reproductor de música -->
+        <footer id="app-player">    
+
+                    <div class="track-info">
+            <img src="imgs/recort.jpg" alt="Portada del álbum" class="cover-image">
+            <div class="song-info">
+                <p  class="song-title"> ThxSoMch - CAROLINE</p>
+                <audio id="audio-player" autoplay>
+                    <source src="musica/ThxSoMch - CAROLINE (Official Music Video) - ThxSoMch.mp3" type="audio/mp3">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+                        </div>
+
+                        
+            <div class="controls">
+                <button id="prev-btn"><i class="fa-solid fa-backward"></i></button>
+                <button id="play-btn"><i class="fa-solid fa-play"></i></button>
+                <button id="pause-btn"><i class="fa-solid fa-pause"></i></button>
+                <button id="next-btn"><i class="fa-solid fa-forward"></i></button>
+            </div>
+
+            <div class="progress-container" id="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            
+
+        
+            
+            
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="songs.js"></script>
+    <script src="hamburguesa.js"></script>
+    <script src="barrabuscar.js"></script>
+</body>
+</html>
+

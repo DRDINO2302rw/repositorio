@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(imgs/logo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; /* Corrección */
+    background-position: center; /* Corrección */
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    margin: 20px auto; /* Ajuste para centrar */
+    background-color: rgb(255, 0, 0); /* Corrección */
+    padding: 10px 20px; /* Corrección */
+    border-radius: 9px;
+    filter: drop-shadow(0 4px 5px rgba(255, 0, 0, 0.6));
+}
+
+.music-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Ajuste */
+    grid-auto-rows: auto; /* Altura automática para cada fila */
+    gap: 20px; /* Espacio entre elementos */
+}
+
+#menu-toggle {
+    display: block;
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Oculta solo la lista lateral por defecto */
+#app-sidebar ul.hidden {
+    display: none;
+}
+
+/* Estilos para el menú lateral */
+#app-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#app-sidebar li {
+    padding: 20px;
+    border-bottom: 1px solid #ff0000;
+}
+
+#app-sidebar li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#app-sidebar li a:hover {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 9px;
+    background: #e50914;
+    color: #ffffff;
+}
+
+.track-info {
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cover-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.song-info {
+    padding: 10px;
+}
+
+.song-title {
+    color: white;
+    margin: 0;
+    text-align: center;
+}

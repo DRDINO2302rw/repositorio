@@ -1,0 +1,198 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Estilos del encabezado */
+#app-header {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos de la barra de búsqueda */
+
+.search-container {
+    margin-left: 15px;
+    position: relative;
+    width: 300px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    outline: none;
+    transition: all 0.3s ease;
+    color: #000;
+    background-color: #fff;
+}
+
+.search-bar::placeholder {
+    color: #999;
+}
+
+.search-bar:focus {
+    border-color: #000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 2px solid #000;
+    border-top: none;
+    border-radius: 0 0 25px 25px;
+    background-color: #000000;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none; /* Ocultar por defecto */
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover {
+    background-color: #000000;
+}
+
+
+
+/* Estilos para el botón del menú hamburguesa */
+#menu-toggle {
+    display: block;
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Oculta el menú lateral por defecto */
+#app-sidebar.hidden {
+    display: none;
+}
+
+/* Estilos para el menú lateral */
+#app-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#app-sidebar li {
+    padding: 20px;
+    border-bottom: 1px solid #ff0000;
+}
+
+#app-sidebar li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#app-sidebar li a:hover {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 9px;
+    background: #e50914;
+    color: #ffffff;
+}
+
+
+/* Estilos del reproductor de música */
+#app-player {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos de la portada del álbum */
+.cover-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.track-info{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(imgs/logo.jpg);
+    background-size: cover;
+    
+}
+
+/* Estilos para el contenedor del reproductor */
+#app-player {
+    margin-top: auto; /* Empuja el reproductor hacia abajo */
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+}
+
+/* Estilos para los botones personalizados */
+.controls {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    padding: 10px 0; /* Espaciado superior e inferior */
+}
+
+.controls button {
+    background-color: #e50914; /* Rojo para el estilo Spotify */
+    filter: drop-shadow(0 4px 7px rgba(255, 1, 1, 0.7));
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #f6121d; /* Rojo más claro al pasar el mouse */
+}
+
+/* Estilos para la barra de progreso */
+.progress-container {
+    width: 70%;
+    height: 5px;
+    background-color: #555;
+    margin-left: 50px;
+}
+
+#progress-bar {
+    width: 5%;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #e50914;
+    filter: drop-shadow(0 4px 7px rgba(255, 1, 1, 0.7));
+    width: 0%; /* Valor inicial */
+}
+
